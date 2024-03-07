@@ -1,0 +1,445 @@
+
+*** Running vivado
+    with args -log FIR.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FIR.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source FIR.tcl -notrace
+Command: synth_design -top FIR -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7700 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 414.086 ; gain = 97.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIR' [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:3]
+INFO: [Synth 8-4471] merging register 'm_axis_fir_tvalid_reg' into 's_axis_fir_tready_reg' [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:97]
+INFO: [Synth 8-4471] merging register 'enable_buff_reg' into 's_axis_fir_tready_reg' [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:98]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_fir_tvalid_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:97]
+WARNING: [Synth 8-6014] Unused sequential element enable_buff_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:98]
+INFO: [Synth 8-256] done synthesizing module 'FIR' (1#1) [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:3]
+WARNING: [Synth 8-3331] design FIR has unconnected port s_axis_fir_tkeep[3]
+WARNING: [Synth 8-3331] design FIR has unconnected port s_axis_fir_tkeep[2]
+WARNING: [Synth 8-3331] design FIR has unconnected port s_axis_fir_tkeep[1]
+WARNING: [Synth 8-3331] design FIR has unconnected port s_axis_fir_tkeep[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 465.688 ; gain = 148.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 465.688 ; gain = 148.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 465.688 ; gain = 148.824
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'acc3_reg[31:0]' into 'acc1_reg[31:0]' [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:158]
+INFO: [Synth 8-4471] merging register 'acc5_reg[31:0]' into 'acc1_reg[31:0]' [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:160]
+INFO: [Synth 8-4471] merging register 'acc9_reg[31:0]' into 'acc1_reg[31:0]' [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:164]
+INFO: [Synth 8-4471] merging register 'acc11_reg[31:0]' into 'acc1_reg[31:0]' [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:166]
+INFO: [Synth 8-4471] merging register 'acc13_reg[31:0]' into 'acc1_reg[31:0]' [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:168]
+WARNING: [Synth 8-6014] Unused sequential element acc3_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:158]
+WARNING: [Synth 8-6014] Unused sequential element acc5_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:160]
+WARNING: [Synth 8-6014] Unused sequential element acc9_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:164]
+WARNING: [Synth 8-6014] Unused sequential element acc11_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:166]
+WARNING: [Synth 8-6014] Unused sequential element acc13_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:168]
+INFO: [Synth 8-5544] ROM "enable_fir" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element acc2_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:157]
+WARNING: [Synth 8-6014] Unused sequential element acc4_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:159]
+WARNING: [Synth 8-6014] Unused sequential element acc6_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:161]
+WARNING: [Synth 8-6014] Unused sequential element acc7_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:162]
+WARNING: [Synth 8-6014] Unused sequential element acc8_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:163]
+WARNING: [Synth 8-6014] Unused sequential element acc10_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:165]
+WARNING: [Synth 8-6014] Unused sequential element acc12_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:167]
+WARNING: [Synth 8-6014] Unused sequential element acc14_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:169]
+WARNING: [Synth 8-6014] Unused sequential element acc0_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:155]
+WARNING: [Synth 8-6014] Unused sequential element acc2_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:157]
+WARNING: [Synth 8-6014] Unused sequential element buff6_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:120]
+WARNING: [Synth 8-6014] Unused sequential element buff7_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:121]
+WARNING: [Synth 8-6014] Unused sequential element buff8_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:122]
+WARNING: [Synth 8-6014] Unused sequential element buff9_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:123]
+WARNING: [Synth 8-6014] Unused sequential element buff10_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:124]
+WARNING: [Synth 8-6014] Unused sequential element buff11_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:125]
+WARNING: [Synth 8-6014] Unused sequential element buff12_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:126]
+WARNING: [Synth 8-6014] Unused sequential element buff13_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:127]
+WARNING: [Synth 8-6014] Unused sequential element buff14_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:128]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 465.688 ; gain = 148.824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 10    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FIR 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 10    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'buff0_reg[15:0]' into 'buff0_reg[15:0]' [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:114]
+INFO: [Synth 8-4471] merging register 'buff3_reg[15:0]' into 'buff3_reg[15:0]' [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:117]
+INFO: [Synth 8-4471] merging register 'buff4_reg[15:0]' into 'buff4_reg[15:0]' [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:118]
+WARNING: [Synth 8-6014] Unused sequential element buff0_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:114]
+WARNING: [Synth 8-6014] Unused sequential element buff4_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:118]
+WARNING: [Synth 8-6014] Unused sequential element buff3_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:117]
+INFO: [Synth 8-4471] merging register 'buff5_reg[15:0]' into 'buff5_reg[15:0]' [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:119]
+INFO: [Synth 8-4471] merging register 'buff1_reg[15:0]' into 'buff1_reg[15:0]' [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:115]
+INFO: [Synth 8-4471] merging register 'buff7_reg[15:0]' into 'buff7_reg[15:0]' [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:121]
+INFO: [Synth 8-4471] merging register 'buff6_reg[15:0]' into 'buff6_reg[15:0]' [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:120]
+INFO: [Synth 8-4471] merging register 'buff2_reg[15:0]' into 'buff2_reg[15:0]' [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:116]
+WARNING: [Synth 8-6014] Unused sequential element buff5_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:119]
+WARNING: [Synth 8-6014] Unused sequential element buff1_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:115]
+WARNING: [Synth 8-6014] Unused sequential element buff7_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:121]
+WARNING: [Synth 8-6014] Unused sequential element buff6_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:120]
+WARNING: [Synth 8-6014] Unused sequential element buff2_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:116]
+WARNING: [Synth 8-6014] Unused sequential element acc0_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:155]
+WARNING: [Synth 8-6014] Unused sequential element acc4_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:159]
+WARNING: [Synth 8-6014] Unused sequential element acc12_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:167]
+WARNING: [Synth 8-6014] Unused sequential element acc10_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:165]
+WARNING: [Synth 8-6014] Unused sequential element acc8_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:163]
+WARNING: [Synth 8-6014] Unused sequential element acc7_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:162]
+WARNING: [Synth 8-6014] Unused sequential element acc6_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:161]
+WARNING: [Synth 8-6014] Unused sequential element acc2_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:157]
+WARNING: [Synth 8-6014] Unused sequential element acc14_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:169]
+WARNING: [Synth 8-6014] Unused sequential element acc0_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:155]
+WARNING: [Synth 8-6014] Unused sequential element acc12_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:167]
+WARNING: [Synth 8-6014] Unused sequential element acc10_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:165]
+WARNING: [Synth 8-6014] Unused sequential element acc8_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:163]
+WARNING: [Synth 8-6014] Unused sequential element acc7_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:162]
+WARNING: [Synth 8-6014] Unused sequential element acc6_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:161]
+WARNING: [Synth 8-6014] Unused sequential element acc4_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:159]
+WARNING: [Synth 8-6014] Unused sequential element acc2_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:157]
+WARNING: [Synth 8-6014] Unused sequential element buff13_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:127]
+WARNING: [Synth 8-6014] Unused sequential element buff14_reg was removed.  [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:128]
+DSP Report: Generating DSP acc14_reg, operation Mode is: (A''*(B:0x3fc9c))'.
+DSP Report: register buff13_reg is absorbed into DSP acc14_reg.
+DSP Report: register buff14_reg is absorbed into DSP acc14_reg.
+DSP Report: register acc14_reg is absorbed into DSP acc14_reg.
+DSP Report: operator acc140 is absorbed into DSP acc14_reg.
+DSP Report: Generating DSP m_axis_fir_tdata0, operation Mode is: PCIN+(A2*(B:0x3fc9c))'.
+DSP Report: register buff0_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: register acc0_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: operator m_axis_fir_tdata0 is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: operator acc00 is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: Generating DSP m_axis_fir_tdata0, operation Mode is: PCIN+(A''*(B:0x5a5))'.
+DSP Report: register buff11_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: register buff12_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: register acc12_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: operator m_axis_fir_tdata0 is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: operator acc120 is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: Generating DSP m_axis_fir_tdata0, operation Mode is: PCIN+(A''*(B:0x3f40c))'.
+DSP Report: register buff9_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: register buff10_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: register acc10_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: operator m_axis_fir_tdata0 is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: operator acc100 is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: Generating DSP m_axis_fir_tdata0, operation Mode is: PCIN+((A:0x282d)*B'')'.
+DSP Report: register buff7_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: register buff8_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: register acc8_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: operator m_axis_fir_tdata0 is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: operator acc80 is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: Generating DSP m_axis_fir_tdata0, operation Mode is: PCIN+((A:0x4000)*BCIN)'.
+DSP Report: register acc7_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: operator m_axis_fir_tdata0 is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: operator acc70 is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: Generating DSP m_axis_fir_tdata0, operation Mode is: PCIN+((A:0x282d)*B'')'.
+DSP Report: register buff5_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: register buff6_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: register acc6_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: operator m_axis_fir_tdata0 is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: operator acc60 is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: Generating DSP m_axis_fir_tdata0, operation Mode is: PCIN+((A:0x3ffff40c)*B'')'.
+DSP Report: register buff3_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: register buff4_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: register acc4_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: operator m_axis_fir_tdata0 is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: operator acc40 is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: Generating DSP m_axis_fir_tdata0, operation Mode is: PCIN+((A:0x5a5)*B'')'.
+DSP Report: register buff1_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: register buff2_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: register acc2_reg is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: operator m_axis_fir_tdata0 is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: operator acc20 is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: Generating DSP m_axis_fir_tdata0, operation Mode is: PCIN+A:B+C.
+DSP Report: operator m_axis_fir_tdata0 is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: Generating DSP m_axis_fir_tdata0, operation Mode is: PCIN+A:B+C.
+DSP Report: operator m_axis_fir_tdata0 is absorbed into DSP m_axis_fir_tdata0.
+DSP Report: Generating DSP m_axis_fir_tdata_reg, operation Mode is: (PCIN+A:B+C)'.
+DSP Report: register m_axis_fir_tdata_reg is absorbed into DSP m_axis_fir_tdata_reg.
+DSP Report: operator m_axis_fir_tdata0 is absorbed into DSP m_axis_fir_tdata_reg.
+WARNING: [Synth 8-3331] design FIR has unconnected port s_axis_fir_tkeep[3]
+WARNING: [Synth 8-3331] design FIR has unconnected port s_axis_fir_tkeep[2]
+WARNING: [Synth 8-3331] design FIR has unconnected port s_axis_fir_tkeep[1]
+WARNING: [Synth 8-3331] design FIR has unconnected port s_axis_fir_tkeep[0]
+INFO: [Synth 8-3886] merging instance 'acc1_reg[18]' (FDRE) to 'acc1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[19]' (FDRE) to 'acc1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[20]' (FDRE) to 'acc1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[21]' (FDRE) to 'acc1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[22]' (FDRE) to 'acc1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[23]' (FDRE) to 'acc1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[24]' (FDRE) to 'acc1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[25]' (FDRE) to 'acc1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[26]' (FDRE) to 'acc1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[27]' (FDRE) to 'acc1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[28]' (FDRE) to 'acc1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[29]' (FDRE) to 'acc1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[30]' (FDRE) to 'acc1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[31]' (FDRE) to 'acc1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[0]' (FDRE) to 'acc1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[1]' (FDRE) to 'acc1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[2]' (FDRE) to 'acc1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[3]' (FDRE) to 'acc1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[4]' (FDRE) to 'acc1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[5]' (FDRE) to 'acc1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[6]' (FDRE) to 'acc1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[7]' (FDRE) to 'acc1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[8]' (FDRE) to 'acc1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[9]' (FDRE) to 'acc1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[10]' (FDRE) to 'acc1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[11]' (FDRE) to 'acc1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[12]' (FDRE) to 'acc1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[13]' (FDRE) to 'acc1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[14]' (FDRE) to 'acc1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[15]' (FDRE) to 'acc1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'acc1_reg[16]' (FDRE) to 'acc1_reg[17]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\acc1_reg[17] )
+INFO: [Synth 8-3886] merging instance 'm_axis_fir_tkeep_reg[0]' (FD) to 'm_axis_fir_tkeep_reg[3]'
+INFO: [Synth 8-3886] merging instance 'm_axis_fir_tkeep_reg[1]' (FD) to 'm_axis_fir_tkeep_reg[3]'
+INFO: [Synth 8-3886] merging instance 'm_axis_fir_tkeep_reg[2]' (FD) to 'm_axis_fir_tkeep_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\m_axis_fir_tkeep_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (m_axis_fir_tkeep_reg[3]) is unused and will be removed from module FIR.
+WARNING: [Synth 8-3332] Sequential element (acc1_reg[17]) is unused and will be removed from module FIR.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 628.938 ; gain = 312.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping                | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FIR         | (A''*(B:0x3fc9c))'         | 16     | 11     | -      | -      | 27     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|FIR         | PCIN+(A2*(B:0x3fc9c))'     | 16     | 11     | -      | -      | 32     | 1    | 0    | -    | -    | -     | 1    | 0    | 
+|FIR         | PCIN+(A''*(B:0x5a5))'      | 16     | 12     | -      | -      | 32     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|FIR         | PCIN+(A''*(B:0x3f40c))'    | 16     | 13     | -      | -      | 32     | 2    | 0    | -    | -    | -     | 1    | 0    | 
+|FIR         | PCIN+((A:0x282d)*B'')'     | 15     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|FIR         | PCIN+((A:0x4000)*BCIN)'    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|FIR         | PCIN+((A:0x282d)*B'')'     | 15     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|FIR         | PCIN+((A:0x3ffff40c)*B'')' | 13     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|FIR         | PCIN+((A:0x5a5)*B'')'      | 12     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|FIR         | PCIN+A:B+C                 | 14     | 18     | 32     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR         | PCIN+A:B+C                 | 14     | 18     | 32     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|FIR         | (PCIN+A:B+C)'              | 14     | 18     | 32     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
++------------+----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 628.938 ; gain = 312.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sources_1/new/fir.v:71]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 637.953 ; gain = 321.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 637.953 ; gain = 321.090
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 637.953 ; gain = 321.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 637.953 ; gain = 321.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 637.953 ; gain = 321.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 637.953 ; gain = 321.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 637.953 ; gain = 321.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |DSP48E1 |    12|
+|3     |LUT1    |     1|
+|4     |LUT2    |     2|
+|5     |LUT3    |     2|
+|6     |LUT4    |     1|
+|7     |LUT5    |     1|
+|8     |LUT6    |     2|
+|9     |FDCE    |    21|
+|10    |FDRE    |   210|
+|11    |IBUF    |    21|
+|12    |OBUF    |    39|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   313|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 637.953 ; gain = 321.090
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 63 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 637.953 ; gain = 321.090
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 637.953 ; gain = 321.090
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 63 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 741.965 ; gain = 437.098
+INFO: [Common 17-1381] The checkpoint 'D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.runs/synth_1/FIR.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FIR_utilization_synth.rpt -pb FIR_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 741.965 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  1 13:30:23 2024...

@@ -1,0 +1,8 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/sakthivel/fpga_practice/practice_2/practice_2.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+D:/sakthivel/fpga_practice/practice_2/practice_2.srcs/sim_1/new/tb_fa.v,1709630950,verilog,,,,tb_fa,,,,,,,,
+D:/sakthivel/fpga_practice/practice_2/practice_2.srcs/sources_1/new/fir.v,1709634872,verilog,,,,fir,,,,,,,,
+D:/sakthivel/fpga_practice/practice_2/practice_2.srcs/sources_1/new/ha.v,1709630728,verilog,,D:/sakthivel/fpga_practice/practice_2/practice_2.srcs/sim_1/new/tb_fa.v,,fa;ha,,,,,,,,

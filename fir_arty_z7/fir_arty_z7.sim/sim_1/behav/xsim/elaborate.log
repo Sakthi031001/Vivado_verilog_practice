@@ -1,0 +1,8 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto b017d08553fc4a1ba4ca21c3b150f29b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_FIR_behav xil_defaultlib.tb_FIR xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port s_axis_fir_tkeep [D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.srcs/sim_1/new/tb_fir.v:43]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

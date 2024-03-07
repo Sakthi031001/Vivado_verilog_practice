@@ -1,0 +1,10 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/sakthivel/fpga_practice/test/test.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+D:/sakthivel/fpga_practice/test/test.srcs/sim_1/new/tb_add.v,1709358264,verilog,,,,tb_add,,,,,,,,
+D:/sakthivel/fpga_practice/test/test.srcs/sim_1/new/tb_ha.v,1709362426,verilog,,,,tb_ha,,,,,,,,
+D:/sakthivel/fpga_practice/test/test.srcs/sources_1/new/add.v,1709358242,verilog,,D:/sakthivel/fpga_practice/test/test.srcs/sim_1/new/tb_add.v,,add,,,,,,,,
+D:/sakthivel/fpga_practice/test/test.srcs/sources_1/new/and.vhd,1709356554,vhdl,,,,andgate,,,,,,,,
+D:/sakthivel/fpga_practice/test/test.srcs/sources_1/new/ha.v,1709359147,verilog,,D:/sakthivel/fpga_practice/test/test.srcs/sim_1/new/tb_ha.v,,ha,,,,,,,,

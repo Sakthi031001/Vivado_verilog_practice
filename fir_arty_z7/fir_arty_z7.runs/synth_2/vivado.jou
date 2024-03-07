@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Mar  1 16:30:56 2024
+# Process ID: 1636
+# Current directory: D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.runs/synth_2
+# Command line: vivado.exe -log FIR.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FIR.tcl
+# Log file: D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.runs/synth_2/FIR.vds
+# Journal file: D:/sakthivel/fpga_practice/fir_arty_z7/fir_arty_z7.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source FIR.tcl -notrace

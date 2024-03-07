@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sakthivel/fpga_practice/vls_vl/vls_vl.srcs/sources_1/new/intro_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module intro_top
+INFO: [VRFC 10-311] analyzing module and_or
+INFO: [VRFC 10-311] analyzing module SR
+INFO: [VRFC 10-311] analyzing module nor_xor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/sakthivel/fpga_practice/vls_vl/vls_vl.srcs/sim_1/new/tb_intro_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_intro_top

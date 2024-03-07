@@ -1,0 +1,16 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/sakthivel/fpga_practice/practice/practice.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+D:/sakthivel/fpga_practice/practice/practice.srcs/sim_1/new/tb_delay.v,1709620450,verilog,,,,tb_delay,,,,,,,,
+D:/sakthivel/fpga_practice/practice/practice.srcs/sim_1/new/tb_fa_4bit.v,1709618466,verilog,,,,tb_fa_4bit,,,,,,,,
+D:/sakthivel/fpga_practice/practice/practice.srcs/sim_1/new/tb_hs.v,1709629971,verilog,,,,tb_hs,,,,,,,,
+D:/sakthivel/fpga_practice/practice/practice.srcs/sim_1/new/tb_intro.v,1709529081,verilog,,,,tb_intro,,,,,,,,
+D:/sakthivel/fpga_practice/practice/practice.srcs/sim_1/new/tb_mux_ct.v,1709615600,verilog,,,,tb_mux_ct,,,,,,,,
+D:/sakthivel/fpga_practice/practice/practice.srcs/sources_1/new/4_bit_fa.v,1709617126,verilog,,D:/sakthivel/fpga_practice/practice/practice.srcs/sim_1/new/tb_fa_4bit.v,,fa;fa_4bit,,,,,,,,
+D:/sakthivel/fpga_practice/practice/practice.srcs/sources_1/new/HS.v,1709629673,verilog,,D:/sakthivel/fpga_practice/practice/practice.srcs/sim_1/new/tb_hs.v,,HS,,,,,,,,
+D:/sakthivel/fpga_practice/practice/practice.srcs/sources_1/new/delay.v,1709620337,verilog,,D:/sakthivel/fpga_practice/practice/practice.srcs/sim_1/new/tb_delay.v,,delay,,,,,,,,
+D:/sakthivel/fpga_practice/practice/practice.srcs/sources_1/new/intro.v,1709527724,verilog,,D:/sakthivel/fpga_practice/practice/practice.srcs/sim_1/new/tb_intro.v,,AND_OR;SR;XOR_NOR;intro,,,,,,,,
+D:/sakthivel/fpga_practice/practice/practice.srcs/sources_1/new/mux.v,1709612939,verilog,,,,mux,,,,,,,,
+D:/sakthivel/fpga_practice/practice/practice.srcs/sources_1/new/mux_ct.v,1709613902,verilog,,D:/sakthivel/fpga_practice/practice/practice.srcs/sim_1/new/tb_mux_ct.v,,mux_add;mux_ct;mux_or,,,,,,,,

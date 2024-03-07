@@ -1,0 +1,14 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto c75e1cd0ef724cb8bd4d79bdd16d2cc9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_FIR_behav xil_defaultlib.tb_FIR xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 4 for port s_axis_fir_tkeep [D:/sakthivel/fpga_practice/FIR/FIR.srcs/sim_1/new/tb_fir.v:43]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FIR
+Compiling module xil_defaultlib.tb_FIR
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_FIR_behav

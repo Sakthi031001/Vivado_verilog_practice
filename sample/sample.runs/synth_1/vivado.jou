@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Feb 23 14:50:53 2024
+# Process ID: 5356
+# Current directory: D:/sakthivel/fpga_practice/sample/sample.runs/synth_1
+# Command line: vivado.exe -log StochasticFIR.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source StochasticFIR.tcl
+# Log file: D:/sakthivel/fpga_practice/sample/sample.runs/synth_1/StochasticFIR.vds
+# Journal file: D:/sakthivel/fpga_practice/sample/sample.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source StochasticFIR.tcl -notrace

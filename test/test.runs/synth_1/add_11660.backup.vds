@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Mar  1 18:15:21 2024
+# Process ID: 11660
+# Current directory: D:/sakthivel/fpga_practice/test/test.runs/synth_1
+# Command line: vivado.exe -log add.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source add.tcl
+# Log file: D:/sakthivel/fpga_practice/test/test.runs/synth_1/add.vds
+# Journal file: D:/sakthivel/fpga_practice/test/test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source add.tcl -notrace
+Command: synth_design -top add -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12044 
+WARNING: [Synth 8-2611] redeclaration of ansi port y is not allowed [D:/sakthivel/fpga_practice/test/test.srcs/sources_1/new/add.v:29]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 428.016 ; gain = 110.168
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'add' [D:/sakthivel/fpga_practice/test/test.srcs/sources_1/new/add.v:23]
+ERROR: [Synth 8-6038] cannot resolve hierarchical name for the item 'b' [D:/sakthivel/fpga_practice/test/test.srcs/sources_1/new/add.v:32]
+ERROR: [Synth 8-285] failed synthesizing module 'add' [D:/sakthivel/fpga_practice/test/test.srcs/sources_1/new/add.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 458.312 ; gain = 140.465
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 1 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  1 18:15:35 2024...
